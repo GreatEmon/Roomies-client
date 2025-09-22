@@ -21,9 +21,8 @@ const MyListing = () => {
         setLoading(false)
   })
   }, [user?.email, data])
-  console.log(data.length)
+
   if (loading) return <Loading></Loading>
-  console.log(data.length)
   return (
     <div className='py-10 container mx-auto'>
       {
