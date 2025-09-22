@@ -2,6 +2,7 @@ import React from 'react'
 import Dw from "../assets/Download.jpg"
 
 const Download = () => {
+    
     return (
         <div className="hero pb-10 md:mx-0 mx-2">
             <div className="flex justify-between items-center flex-col lg:flex-row-reverse lg:gap-70">
