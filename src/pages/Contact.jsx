@@ -2,14 +2,15 @@ import React from 'react'
 
 const Contact = () => {
     document.title = "Contact US"
+
     return (
         <div className="hero bg-base-100 md:py-40">
             <div className="hero-content flex-col lg:flex-row-reverse gap-10">
                 <div className="text-center lg:text-left">
                     <h1 className="text-5xl font-bold">Contact Us</h1>
                     <p className="py-6">
-                        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                        quasi. In deleniti eaque aut repudiandae et a id nisi.
+                        Need help finding a roommate or have a question about RoomX?
+                        Our team is ready to assist with inquiries, feedback, or partnership opportunities.
                     </p>
                     <p className="py-2">
                         <ul>
