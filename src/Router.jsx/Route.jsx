@@ -14,6 +14,7 @@ import PrivateRoute from "../Context/PrivateRoute";
 import Browse from "../pages/Browse";
 import ListDetails from "../pages/ListDetails";
 import MyListing from "../pages/myListing";
+import UpdateInfo from "../pages/UpdateInfo";
 
 export const router = createBrowserRouter([
     {
@@ -62,14 +63,19 @@ export const router = createBrowserRouter([
             },
             {
                 path : 'browse',
-                element : <PrivateRoute>
-                    <Browse></Browse>
-                </PrivateRoute>
+                element : <Browse></Browse>
+
             },
             {
                 path : 'mylist',
                 element : <PrivateRoute>
                     <MyListing></MyListing>
+                </PrivateRoute>
+            },
+            {
+                path : 'update/:id',
+                element : <PrivateRoute>
+                    <UpdateInfo></UpdateInfo>
                 </PrivateRoute>
             }
         ]

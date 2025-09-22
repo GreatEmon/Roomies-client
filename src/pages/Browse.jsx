@@ -5,11 +5,12 @@ import { useEffect } from 'react'
 import ListingCard from '../component/ListingCard'
 
 const Browse = () => {
+    document.title = "Browse Listing"
     const [data, setData] = useState([])
     const [loading, setLoading] = useState(true)
 
     useEffect(() => {
-        fetch("http://localhost:3000").
+        fetch("https://rommies-backend.vercel.app").
             then(res => res.json()).
             then(r => setData(r))
         setLoading(false)

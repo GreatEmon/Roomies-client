@@ -1,6 +1,7 @@
 import React from 'react'
 
 const Contact = () => {
+    document.title = "Contact US"
     return (
         <div className="hero bg-base-100 md:py-40">
             <div className="hero-content flex-col lg:flex-row-reverse gap-10">

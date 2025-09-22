@@ -11,7 +11,7 @@ const Feature = () => {
 
   useEffect(() => {
 
-    fetch("http://localhost:3000/home").
+    fetch("https://rommies-backend.vercel.app/home").
     then(res => res.json()).
     then(r => setData(r))
     setLoading(false)

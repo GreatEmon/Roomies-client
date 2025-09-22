@@ -1,5 +1,8 @@
 @import "tailwindcss";
-@plugin "daisyui";
+
+@plugin "daisyui" {
+  themes: all;
+}
 
 li .active{
     background-color: #3B25C1;

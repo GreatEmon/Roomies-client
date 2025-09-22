@@ -10,7 +10,8 @@ const Login = () => {
     const { login, logwGoogle, setUser } = use(AuthContext)
     const [load, setLoad] = useState(false)
     const navigate = useNavigate()
-    const location = useLocation();
+    const location = useLocation(); 
+ 
     const handleSubmit = (e) => {
         setLoad(true)
         e.preventDefault();
@@ -86,8 +87,8 @@ const Login = () => {
                             <label className="label">Password</label>
                             <input type="password" className="input" placeholder="Password"
                                 name='password' required />
-                            <div><Link className="link link-hover">Forgot password?</Link></div>
-                            <button className="btn bg-[#095943] text-white mt-4" type='submit'>Login</button>
+
+                            <button className="btn btn-primary mt-4" type='submit'>Login</button>
                             <p className='text-center font-semibold'>Dont’t Have An Account ? <Link to="/register" className='text-secondary py-2'>Register</Link></p>
                         </fieldset>
                     </form>

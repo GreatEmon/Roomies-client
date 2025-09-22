@@ -118,7 +118,7 @@ const Register = () => {
 
               </div>
 
-              <button className="btn bg-[#095943] text-white mt-4" type='submit'>Register</button>
+              <button className="btn btn-primary mt-4" type='submit'>Register</button>
               <p className=' text-center font-semibold'>Already Have An Account ? <Link to="/login" className='text-secondary py-2'>Login</Link></p>
             </fieldset>
           </form>

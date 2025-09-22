@@ -1,4 +1,5 @@
 import React from 'react'
+import { Typewriter } from 'react-simple-typewriter'
 
 export const Banner = () => {
     return (
@@ -15,9 +16,14 @@ export const Banner = () => {
                         <div className="hero-overlay"></div>
                         <div className="hero-content text-neutral-content text-center">
                             <div className="max-w-lg">
-                                <h1 className="mb-5 text-5xl font-bold">Welcome to RoomX</h1>
+                                <h1 className="mb-5 text-5xl font-bold">
+                                    <Typewriter
+                                        words={['Welcome to RoomX', 'Match with the Right Roommate', 'Your Ideal Home Starts Here']}
+                                        cursor
+                                    />
+                                </h1>
                                 <p className="mb-5">
-                                   Find the perfect roommate in just a few clicks. RoomX connects you with people who share your budget, lifestyle, and location preferences—making your next move stress-free and simple.
+                                    Find the perfect roommate in just a few clicks. RoomX connects you with people who share your budget, lifestyle, and location preferences—making your next move stress-free and simple.
                                 </p>
                                 <button className="btn btn-primary">Explore Now</button>
                             </div>
@@ -39,7 +45,12 @@ export const Banner = () => {
                         <div className="hero-overlay"></div>
                         <div className="hero-content text-neutral-content text-center">
                             <div className="max-w-lg">
-                                <h1 className="mb-5 text-5xl font-bold">Match with the Right Roommate</h1>
+                                <h1 className="mb-5 text-5xl font-bold">
+                                    <Typewriter
+                                        words={['Welcome to RoomX', 'Match with the Right Roommate', 'Your Ideal Home Starts Here']}
+                                        cursor
+                                    />
+                                </h1>
                                 <p className="mb-5">
                                     Discover compatible roommates based on interests, habits, and living style. RoomX’s smart filters help you save time and avoid awkward mismatches.
                                 </p>
@@ -63,7 +74,12 @@ export const Banner = () => {
                         <div className="hero-overlay"></div>
                         <div className="hero-content text-neutral-content text-center">
                             <div className="max-w-lg">
-                                <h1 className="mb-5 text-5xl font-bold">Your Ideal Home Starts Here</h1>
+                                <h1 className="mb-5 text-5xl font-bold">
+                                    <Typewriter
+                                        words={['Welcome to RoomX', 'Match with the Right Roommate', 'Your Ideal Home Starts Here']}
+                                        cursor
+                                    />
+                                </h1>
                                 <p className="mb-5">
                                     Whether you’re new in town or just need a better fit, RoomX makes it easy to browse listings, chat securely, and move in with confidence.
                                 </p>

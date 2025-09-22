@@ -13,9 +13,10 @@ const ListDetails = () => {
     const [listing, setListing] = useState({})
     const [loading, setLoading] = useState(true)
     const [likes, setLikes] = useState(0)
+    const [isClicked, setIsClicked] = useState(0)
 
     useEffect(() => {
-        fetch(`http://localhost:3000/details/${id}`).
+        fetch(`https://rommies-backend.vercel.app/details/${id}`).
             then(res => res.json()).
             then(r => {
                 setListing(r)
@@ -31,10 +32,12 @@ const ListDetails = () => {
             Swal.fire({
                 icon: "error",
                 title: "Oops...",
-                text: "You can't react on your own list",
+                text: "You can't react on your own post",
             });
         }else{
-            setLikes(likes + 1)
+            setIsClicked(1)
+            setLikes(likes+1)
+            
         }
     }
 
@@ -108,13 +111,19 @@ const ListDetails = () => {
                 {/* Contact & User Info */}
                 <div className="border-t pt-6">
                     <h2 className="text-xl font-semibold mb-4">Contact Details</h2>
-                    <p className="mb-1">
+                    {
+                        isClicked ? <p className="mb-1">
                         <span className="font-semibold">Phone:</span>{" "}
                         {listing?.contactInfo}
-                    </p>
+                    </p> : ""
+                    }
+                    
                     <p>
                         <span className="font-semibold">Listed By:</span>{" "}
                         {listing?.userName} ({listing?.userEmail})
+                    </p>
+                    <p className='mt-6 text-center text-xl font-semibold'>
+                        <span className="font-semibold">{likes}</span> people interested in this
                     </p>
                 </div>
 
