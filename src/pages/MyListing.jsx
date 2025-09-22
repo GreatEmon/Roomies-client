@@ -16,14 +16,16 @@ const MyListing = () => {
   useEffect(() => {
     fetch(`https://rommies-backend.vercel.app/mylist/${user.email}`).
       then(res => res.json()).
-      then(r => setData(r))
-    setLoading(false)
+      then(r => {
+        setData(r)
+        setLoading(false)
+  })
   }, [user?.email, data])
-
+  console.log(data.length)
   if (loading) return <Loading></Loading>
+  console.log(data.length)
   return (
     <div className='py-10 container mx-auto'>
-
       {
         data.length > 0 ? <>
           <h1 className='text-3xl text-center font-bold my-10'>My Listing</h1>
