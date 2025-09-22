@@ -10,7 +10,6 @@ const Feature = () => {
   const [loading,setLoading]  = useState(true)
 
   useEffect(() => {
-
     fetch("https://rommies-backend.vercel.app/home").
     then(res => res.json()).
     then(r => setData(r))
@@ -18,6 +17,7 @@ const Feature = () => {
   }, [])
  
   if(loading) return <Loading></Loading>
+  
   return (
     <div className='py-10 md:mx-0 mx-2'>
         <h1 className='text-3xl text-center font-bold my-10'>Feature Rooms</h1>
