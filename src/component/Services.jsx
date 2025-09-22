@@ -8,6 +8,7 @@ import { TbStarFilled } from "react-icons/tb";
 
 const Services = () => {
   return (
+
     <>
         <div className='text-center py-[100px] mulish md:mx-0 mx-2'>
                 <h1 className='text-[40px] font-extrabold text-[#0F0F0F]'>Our Platform in Numbers</h1>
@@ -33,7 +34,6 @@ const Services = () => {
                         <h1 className='text-5xl font-extrabold mt-4 mb-3'><CountUp end={50} duration={5}/>+</h1>
                         <p className='text-xl font-medium text-[#0F0F0F60]'>Total Rating</p>
                     </div>
-
                 </div>
             </div>
     </>
