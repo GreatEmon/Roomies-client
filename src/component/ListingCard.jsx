@@ -5,6 +5,7 @@ const ListingCard = ({ listing }) => {
   return (
     <div className="card w-full bg-base-100 shadow-xl border border-gray-200">
       <div className="card-body">
+
         {/* Title & Location */}
         <h2 className="card-title text-xl font-semibold">
           {listing.title}
@@ -63,6 +64,7 @@ const ListingCard = ({ listing }) => {
             See More
           </Link>
         </div>
+        
       </div>
     </div>
   );
