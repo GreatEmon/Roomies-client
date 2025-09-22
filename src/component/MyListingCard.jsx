@@ -15,7 +15,6 @@ const MyListingCard = ({ listing, index }) => {
             confirmButtonText: "Yes, delete it!"
         }).then((result) => {
             if (result.isConfirmed) {
-
                 fetch(`https://rommies-backend.vercel.app/delete/${listing._id}`, {
                     method: "DELETE",
                     headers: {
@@ -42,13 +41,10 @@ const MyListingCard = ({ listing, index }) => {
                         }
 
                     })
-
-
             }
         });
 
-    }
-
+}
 
     return (
         <tr>
