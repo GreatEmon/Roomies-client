@@ -3,6 +3,7 @@ import { Link } from 'react-router'
 import { NavLink } from 'react-router'
 
 const Footer = () => {
+
     return (
         <footer className="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10">
             <nav className="grid grid-flow-col gap-4">
@@ -47,9 +48,11 @@ const Footer = () => {
                     </NavLink>
                 </div>
             </nav>
+
             <aside>
                 <p>Copyright © {new Date().getFullYear()} - All right reserved by RoomX</p>
             </aside>
+            
         </footer>
     )
 }
