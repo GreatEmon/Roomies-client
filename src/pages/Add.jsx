@@ -72,6 +72,7 @@ const Add = () => {
 
             })
     }
+
     return (
         <div className='flex justify-center my-[60px]'>
             <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
@@ -127,7 +128,6 @@ const Add = () => {
                     </form>
                 </div>
             </div>
-
         </div>
     )
 }
