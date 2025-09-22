@@ -7,6 +7,7 @@ import { Fade, Slide, Bounce } from "react-awesome-reveal";
 
 const Home = () => {
   document.title = "RoomX"
+  
   return (
     <div className='container mx-auto '>
       <Fade triggerOnce>

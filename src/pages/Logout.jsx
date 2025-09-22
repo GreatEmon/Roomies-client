@@ -16,12 +16,12 @@ const Logout = () => {
         })
         navigate('/')
     }).catch((error) => {
-        // An error happened.
+        
     });
 
 
     return (
-        <div></div>
+        <></>
     )
 }
 
