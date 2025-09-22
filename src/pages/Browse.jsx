@@ -12,8 +12,10 @@ const Browse = () => {
     useEffect(() => {
         fetch("https://rommies-backend.vercel.app").
             then(res => res.json()).
-            then(r => setData(r))
-        setLoading(false)
+            then(r => {
+                setData(r)
+                setLoading(false)
+            })
     }, [])
 
     if (loading) return <Loading></Loading>
